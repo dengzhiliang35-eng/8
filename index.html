@@ -5,80 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>山西爱农晋祠现代农业园 - 八号大棚</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        body {
-            background: #f5f5f5;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #f5f5f5; }
+
         .banner {
             width: 100%;
+            display: block;
         }
         .banner img {
             width: 100%;
             height: auto;
             display: block;
         }
+
         .container {
             background: #fff;
             margin: 10px;
             border-radius: 10px;
             padding: 15px;
         }
-        .棚头 {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-            align-items: center;
+        
+        .棚头 { 
+            display: flex; 
+            gap: 15px; 
+            margin-bottom: 15px; 
+            align-items: center; 
         }
         .棚头 .img-box {
-            width: 120px;
+            width: 120px; 
             height: 120px;
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid #eee;
         }
-        .棚头 .img-box img {
+        .棚头 .img-box img { 
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
-        .棚信息 {
-            flex: 1;
-        }
-        .棚名 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .棚ID {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .状态 {
-            background: #00c853;
-            color: #fff;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            display: inline-block;
-        }
-        .基础信息 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+
+        .棚信息 { flex: 1; }
+        .棚名 { font-size: 24px; font-weight: bold; margin-bottom: 5px; }
+        .棚ID { color: #666; font-size: 14px; margin-bottom: 10px; }
+        .状态 { background: #00c853; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 14px; display: inline-block; }
+        
+        .基础信息 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
             margin: 15px 0;
         }
-        .信息项 {
-            background: #f5f5f5;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 16px;
+        .信息项 { 
+            background: #f5f5f5; 
+            padding: 12px; 
+            border-radius: 8px; 
+            font-size: 16px; 
         }
         .信息项 .label {
             font-weight: bold;
@@ -86,6 +68,7 @@
             margin-bottom: 4px;
             color: #333;
         }
+        
         .模块 {
             margin: 20px 10px;
             padding: 15px;
@@ -100,32 +83,24 @@
             text-decoration: none;
             color: inherit;
         }
-        .模块项:last-child {
-            border-bottom: none;
-        }
-        .模块-icon {
-            font-size: 24px;
-            margin-right: 10px;
-        }
-        .模块-name {
-            flex: 1;
-            font-size: 18px;
-        }
-        .arrow {
-            color: #999;
-            font-size: 18px;
-        }
+        .模块项:last-child { border-bottom: none; }
+        .模块-icon { font-size: 24px; margin-right: 10px; }
+        .模块-name { flex: 1; font-size: 18px; }
+        .arrow { color: #999; font-size: 18px; }
+
         .bottom-section {
             background: #fff;
             margin: 10px;
             border-radius: 10px;
             padding: 20px;
         }
+
         .园区大门图 {
             width: 100%;
             border-radius: 8px;
             margin-bottom: 20px;
         }
+
         .园区基础信息 {
             font-size: 16px;
             line-height: 1.8;
@@ -136,12 +111,14 @@
             display: block;
             margin-bottom: 5px;
         }
+
         .园区介绍 {
             font-size: 15px;
             line-height: 1.8;
             color: #333;
             margin-bottom: 25px;
         }
+
         .导航链接 {
             font-size: 17px;
             font-weight: bold;
@@ -155,11 +132,13 @@
             color: #666;
             margin-bottom: 25px;
         }
+
         .divider {
             height: 1px;
             background: #ddd;
             margin: 25px 0;
         }
+
         .公众号区域 {
             display: flex;
             align-items: center;
@@ -204,17 +183,32 @@
     </div>
 
     <div class="基础信息">
-        <div class="信息项"><span class="label">棚号</span>8号棚</div>
-        <div class="信息项"><span class="label">种植户</span>张毅炫</div>
-        <div class="信息项"><span class="label">种植作物</span>草莓</div>
-        <div class="信息项"><span class="label">种植品种</span>红颜草莓</div>
-        <div class="信息项"><span class="label">定植时间</span>2026年3月15日</div>
+        <div class="信息项">
+            <span class="label">棚号</span>
+            8号棚
+        </div>
+        <div class="信息项">
+            <span class="label">种植户</span>
+            张毅炫
+        </div>
+        <div class="信息项">
+            <span class="label">种植作物</span>
+            甜瓜
+        </div>
+        <div class="信息项">
+            <span class="label">种植品种</span>
+            爱农蜜瓜
+        </div>
+        <div class="信息项">
+            <span class="label">定植时间</span>
+            2026年3月10号
+        </div>
     </div>
 </div>
 
 <div class="模块">
     <a class="模块项" href="环境.html">
-        <div class="module-icon">🍃</div>
+        <div class="模块-icon">🍃</div>
         <div class="模块-name">生长环境</div>
         <div class="arrow">></div>
     </a>
@@ -254,6 +248,9 @@
         </div>
     </div>
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
